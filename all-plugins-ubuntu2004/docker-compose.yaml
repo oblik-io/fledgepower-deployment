@@ -16,7 +16,7 @@ services:
       - "2405:2405"
       - "6001:6001"
       - "6002:6002"
-      # - "443:443"
+      - "443:443"
 
     networks:
       - fledge-power
@@ -29,7 +29,7 @@ services:
       dockerfile: fledge-gui.dockerfile
     ports:
       - "8080:80"
-      # - "443:443"
+      - "443:443"
 
     networks:
       - fledge-power
